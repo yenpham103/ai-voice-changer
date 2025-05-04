@@ -6,7 +6,15 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "engines": {
+      "node": ">=18"
+    },
+    "overrides": {
+      "audio-react-recorder": {
+        "react": "$react"
+      }
+    }
   },
   "dependencies": {
     "@vercel/blob": "^0.27.1",
